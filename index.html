@@ -1,3 +1,8 @@
+---
+title: "Home"
+---
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +12,13 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Hello world</h1>
-    
+
+    {% if page.title=="Home" %}
+    <p>Hola estoy en home</p>
+  {% endif %}
+
+
+<h1>{{ "Hello World!" | upcase }}</h1>
+
 </body>
 </html>
