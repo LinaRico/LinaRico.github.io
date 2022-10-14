@@ -17,21 +17,27 @@
 
     --font-color-paragraph: var(--grey);
 
-    --font-size-small: calc (var(--font-size-base) * 1.5);
+    --font-size-small: 1.5 rem;
+    --paddig-base: 10px;
 
 }
 
 *{
   box-sizing: border-box;
+}
+
+html{
+    background-color: var(--background);
+    color: var(--color-font-paragraph);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
 
 
 }
+
 body{
-    background-color: var(--background);
-    font-family: var(--font-family);
     font-size: var(--font-size-small);
-    padding: 0%;
-    margin: 0%;
+  
 
 }
 
@@ -46,6 +52,36 @@ p{
 
 .NavigationBar {
     background-color: var(--color-primary);
+
+ 
    
 
 }
+.NavigationBar-brandContainer,
+.NavigationBar-menuContainer{
+padding-left: var(--paddig-base) ;
+padding-right: var(--paddig-base) ;
+}
+
+.NavigationBar-brandContainer{
+    border-bottom: 1px solid var(--grey);
+}
+
+.NavigationBar-brand{
+    color: var(--white);
+    display: block;
+    font-size: 1.9rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.NavigationBar-Menu{
+
+
+}
+
+
+
