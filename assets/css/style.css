@@ -1,0 +1,51 @@
+:root{
+    --color-primary: #f9bc60;
+    --color-secondary: #abd1c6;
+    --color-tertiary: #e16162;
+    --white: #e8e4e6;
+    --black:#001e1d;
+    --green: #004643;
+    --grey: #abd1c6;
+
+    --background: var(--green);
+
+    --font-size-base: 10px; /* TamaÃ±o de letra*/
+
+    --font-family: "Lato","Helvetica Neue", Helvetica, Arial, sans-serif;/* Tipo de letra*/
+
+    --font-color-heading: var(--white);
+
+    --font-color-paragraph: var(--grey);
+
+    --font-size-small: calc (var(--font-size-base) * 1.5);
+
+}
+
+*{
+  box-sizing: border-box;
+
+
+}
+body{
+    background-color: var(--background);
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    padding: 0%;
+    margin: 0%;
+
+}
+
+h1, h2, h3{
+   color: var(--font-color-heading);
+}
+
+p{
+    color: var(--font-color-paragraph);
+
+}
+
+.NavigationBar {
+    background-color: var(--color-primary);
+   
+
+}
