@@ -31,6 +31,8 @@ html{
     color: var(--color-font-paragraph);
     font-family: var(--font-family);
     font-size: var(--font-size-base);
+    
+    
 
 
 }
@@ -41,7 +43,8 @@ body{
 
 }
 
-h1, h2, h3{
+h1, h2, h3
+{
    color: var(--font-color-heading);
 }
 
@@ -65,9 +68,12 @@ padding-right: var(--paddig-base) ;
 
 .NavigationBar-brandContainer{
     border-bottom: 1px solid var(--grey);
+    
 }
 
-.NavigationBar-brand{
+a,
+.NavigationBar-brand
+{
     color: var(--white);
     display: block;
     font-size: 1.9rem;
@@ -78,10 +84,9 @@ padding-right: var(--paddig-base) ;
 
 }
 
-.NavigationBar-Menu{
 
-
-}
-
+a:hover {
+    color: var(--green);
+  }
 
 
