@@ -66,12 +66,45 @@ padding-left: var(--paddig-base) ;
 padding-right: var(--paddig-base) ;
 }
 
+.NavigationBar-menuContainer--hide{
+    display: none;
+}
+
+.NavigationBar-menuContainer--show{
+    display: block;
+}
+
+
 .NavigationBar-brandContainer{
-    border-bottom: 1px solid var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .1rem solid var(--grey);
     
 }
 
-a,
+.NavigationBar-hamburguerContainer{
+    border: 0.1rem solid var(--color-tertiary);
+    border-radius: 0.4rem;
+    padding: 0.9rem 1rem 0.5rem ;
+    width: 4.5rem;
+
+}
+
+.NavigationBar-hamburguerContainer:hover{
+    background-color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+.NavigationBar-hamburguerLine{
+    background-color: var(--white);
+    border-radius: 0.4rem;
+    height: 0.3rem;
+    margin-bottom: 0.4rem;
+    
+}
+
+
 .NavigationBar-brand
 {
     color: var(--white);
@@ -85,8 +118,25 @@ a,
 }
 
 
-a:hover {
-    color: var(--green);
+.NavigationBar-brand:hover, 
+.NavigationBar-menuList > a:hover{
+    color: var(--color-secondary);
+  }
+
+  .NavigationBar-menu{
+    padding: 1rem 0;
+  }
+
+  .NavigationBar-menuList{
+    font-weight:  bold;
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
+
+  .NavigationBar-menuList > a{
+    color: var(--white);
+    display: block;
+    text-decoration: none;
   }
 
 
