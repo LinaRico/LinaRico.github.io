@@ -13,6 +13,7 @@
 
     --font-family: "Lato","Helvetica Neue", Helvetica, Arial, sans-serif;/* Tipo de letra*/
     --font-family-headings: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-fontawesome: "Font Awesome 5 Free", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     --font-color-heading: var(--white);
 
@@ -163,6 +164,47 @@ p {
   display: block;
   text-decoration: none;
 }
+
+.StarComponent{
+  border: 0;
+  border-top: solid .5rem;
+  margin: 2.5rem auto 3rem;
+  max-width: 25rem;
+  padding: 0;
+  text-align: center;
+  overflow: visible;
+
+}
+
+.StarComponent, .StarComponent::after{
+  color: var(--white);
+
+
+}
+
+.StarComponent::after{
+  position: relative;
+  top: -.8em;
+  background-color: var(--green);
+  content: "\f005";
+  display: inline-block;
+  font-family: var(--font-family-fontawesome);
+  font-size: 2em;
+  padding: 0 .25rem;
+
+
+}
+
+.StarComponent--dark{
+  border-color: var(--color-primary);
+
+}
+
+.StarComponent--dark::after{
+  color: var(--color-primary);
+  background-color: var(--white);
+}
+
 @media (min-width: 768px) {
   .NavigationBar-container {
     display: flex;
