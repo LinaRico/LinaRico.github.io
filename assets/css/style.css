@@ -107,7 +107,7 @@ p {
 
 .NavigationBar-brand:hover,
 .NavigationBar-menuList > a:hover {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .NavigationBar-hamburgerContainer {
@@ -193,7 +193,7 @@ p {
 .StarComponent::after{
   position: relative;
   top: -.8em;
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondaryb);
   content: "\f005";
   display: inline-block;
   font-family: var(--font-family-fontawesome);
@@ -210,7 +210,7 @@ p {
 
 .StarComponent--dark::after{
   color: var(--color-primary);
-  background-color: var(--green);
+  background-color: var(--color-secondary);
 }
 
 .TitleComponent{
@@ -231,6 +231,11 @@ p {
 
 }
 
+.Header{
+  background-color: var(--color-secondary);
+  padding: 20rem 0 10rem;
+  text-align: center;
+}
 @media (min-width: 768px) {
   .NavigationBar-menuContainer--show{
     box-shadow: none;
