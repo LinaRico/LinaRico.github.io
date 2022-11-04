@@ -170,6 +170,7 @@ p {
 .StarComponent{
   border: 0;
   border-top: solid .5rem;
+  height: 0;
   margin: 2.5rem auto 3rem;
   max-width: 25rem;
   overflow: visible;
@@ -180,9 +181,7 @@ p {
 }
 
 .StarComponent, .StarComponent::after{
-  color: var(--white);
-
-
+  color: var(--green);
 }
 
 .StarComponent::after{
@@ -190,11 +189,11 @@ p {
   top: -.8em;
   background-color: var(--color-secondary);
   content: "\f005";
+  color: var(--white);
   display: inline-block;
   font-family: var(--font-family-fontawesome);
   font-size: 2em;
   padding: 0 .25rem;
-
 
 }
 
@@ -203,9 +202,10 @@ p {
 
 }
 
-.StarComponent--dark::after{
+.StarComponent--dark::after {
+  background-color: var(--green);
   color: var(--white);
-  background-color: var(--color-secondary);
+
 }
 
 .TitleComponent{
@@ -233,12 +233,7 @@ p {
 }
 
 
-.Header-container{
-  padding: 0 var(--padding-base);
-}
-
-
-.Header-img{
+.Header-image{
   border-radius: 50%;
 }
 
@@ -248,12 +243,33 @@ p {
 
 }
 
-.Header-img{
+.Header-image{
+  height: auto;
   margin: 0 auto 2rem;
   width: 25rem;
 
 }
+.SectionComponent{
+  background: transparent;
+  padding: 7.5rem 1rem;
+  text-align: center;
 
+}
+
+.SectionComponent-imageContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.ImageComponent-img{
+  margin: 0 0 1.5rem;
+}
+
+.Header-container{
+  padding: 0 var(--padding-base);
+}
 
 
 @media (min-width: 768px) {
@@ -305,6 +321,8 @@ p {
   .Header-skills{
     font-size: 2.6rem;
   }
+
+ 
 }
 
 
