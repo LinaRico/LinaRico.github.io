@@ -1,4 +1,4 @@
 <div class="imageComponent">
-    <img class="ImageComponent-img" src="{% if include.src %}{{ include.src }} {% else %}https://via.placeholder.com/400x289?text=placeholder {% endif %}" alt="{{ include.alt }}"/>
-    <div class="ImageComponent-container"></div>
+    <img class="ImageComponent-img" src="{% if include.src %}{{ include.src }} {% else %} assets/images {% endif %}" alt="{{ include.alt }}"/>
+    <div class="ImageComponent-container">
 </div>

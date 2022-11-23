@@ -259,17 +259,25 @@ p {
 .SectionComponent-imageContainer{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  align-items: center;
+  
 }
+
+
 
 .ImageComponent-img{
   margin: 0 0 1.5rem;
+  height: 202px;
+  width: 280px;
+  
+
 }
 
 .Header-container{
   padding: 0 var(--padding-base);
 }
+
+
 
 
 @media (min-width: 768px) {
@@ -322,8 +330,8 @@ p {
     font-size: 2.6rem;
   }
 
- 
-}
+  }
+
 
 
 
@@ -334,5 +342,6 @@ p {
     margin: 0 auto;
     max-width: var(--max-width-container);
   }
+
 }
 
